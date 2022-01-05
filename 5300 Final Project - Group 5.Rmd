@@ -1,0 +1,475 @@
+---
+title: "The effect of pop-ups design on the website visiting time and  subscription conversion rate in the e-commerce industry"
+author:  "Group 5: Shiyu Hua, Jiamin Xu, Can Luo, Rou Gang, Guoming Shan"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment="", warning = FALSE, message = FALSE, tidy.opts=list(width.cutoff=55), tidy = TRUE)
+```
+
+## Part 1:  Research Proposal
+
+### Executive Summary / Abstract
+
+**Jiamin Xu 100%**: 
+
+Abstract
+
+Forever 21, once a leading fast-fashion clothing retailer among teenage clothing retailers, experienced bankruptcy in 2019 and closed 350 physical stores around the world. One important reason is that they ignored e-commerce largely, which negatively impact their sales revenue. The conversion rate of email subscriptions is largely related to sales revenue. One way to increase the conversion rate of email subscriptions and attract customers’ attention is using a great pop-ups design. Currently, Forever 21 uses full-screen intrusive pop-ups, which is considered the top annoying pop-ups format in all age populations. We want to examine the effects on user engagement of different pop-ups formats in this research, which can help Forever 21 to attract customers’ attention and increase the conversion rate of email subscriptions through excellent pop-ups design.
+
+Objective: To explore effects on user engagement of full-screen intrusive pop-ups and non-intrusive slide-in box pop-ups format, including the effect of customers’ visiting time and conversion rate of subscription. 
+
+Methods: Visit records of Forever 21 U.S. official websites, between March 1st 2022 and March 31th 2022 were included. We obtained data including visiting time and subscription level from visit records. We randomly and evenly displayed two formats of pop-ups with the same content on the website through a computer algorithm, and then we selected 2985 samples from each group. Two formats of pop-ups are two independent variables. We have two dependent variables included visiting time and subscription level. Subscription included two levels, either subscribed or not. Because we have two dependent variables, we proposed two Null hypotheses and alternative hypotheses respectively. We created a hypothetical dataset to test our hypotheses through testing different scenarios.
+
+Results: In the no effect scenario, the mean p-value for research question one is 0.5045 and the mean p-value for research question two is 0.4905. In the effect scenario, the mean p-value for research question one is 2.4315e-59 and the mean p-value for research question two is 0.0462.
+
+Conclusion: Two scenarios, the no effect scenario and the effect scenario, had different results. In the no effect scenario, we don’t have sufficient evidence that the non-intrusive slide-in box pop-ups could increase customers’ vising time and conversion rate of subscription. In the effect scenarios, the conversion rate of subscriptions and website visiting time could increase when the website displayed non-intrusive slide-in box pop-ups. To evaluate our experiment design, we used the percentage of true positive, which refers to the likelihood the experiment can demonstrate the effect when it exists. For the first research question, it’s 100%. For the second one, it’s nearly 80%.  Thus, we could conclude that the experiment has been well designed to detect a true effect for both research questions.
+
+Keywords: pop-ups, full-screen intrusive pop-ups, non-intrusive slide-in box pop-ups, conversion rate, subscription
+
+
+### Statement of the Problem
+
+**Shiyu Hua 100%**: 
+
+Forever 21 was once a leading fast fashion retailer and a popular brand among young people. Forever 21 had its peak sales and global expansion by 2015, but it filed for bankruptcy in 2019 and closed up to 350 physical stores around the world (Bhattarai & Telford, 2019).  It failed because the company built up too many costly physical spaces and had a weak focus on e-commerce. Only 16% of its sales came from online (Kahn & Cesareo, 2019). Forever 21 now realizes the importance and profitability of e-commerce operations, and tries to "drive innovation across e-commerce and digital to expand access and convenience" (Lim, 2020).
+
+Increasing the conversion rate on the website is one of the goals of Forever 21, and a good user experience is necessary to ensure that users continue to engage with the brand until they are ready to convert. Pop-up window is a part of the user experience (UX) design, and we want to optimize the pop-up design to improve user experience and increase the conversion rate of subscriptions on the website. Currently Forever 21 has a full-screen intrusive welcome pop-up upon the page entrance, while intrusive pop-ups rank the number one annoying pop-ups format from all age populations. We wonder if this pop-up format is good enough for our user experience and engagement, and how we can redesign the pop-up format to improve user experience and increase conversion rate of email subscriptions. Previous research and many marketing guides suggest that pop-ups without intrusive and surprising factors have a better positive effect on user experience and engagement. We would examine the effects on user engagement of two different pop-up formats in this research experiment to help Forever 21 regain user engagement in the online environment. 
+
+### Research Questions and Hypotheses 
+**Shiyu Hua 100%**: 
+
+The primary objective of this study is to examine the effects on user engagement between the two designs of pop-up format on the Forever 21 website in a population-based one-month study. The study conducts an A/B testing of the two pop-up formats to investigate the effects on user engagement. The independent variable is the two pop-ups with two unique design formats. One is the full-screen intrusive pop-up that is currently in use. The other one is a new design of non-intrusive slide-in box pop-up put on the right sidebar of the website. The detailed explanation of variables are in the following research design section. 
+
+The user engagement was broken down into two perspectives, website visiting time and actual conversion rate. The longer time users spend on the website, the better is the user engagement. So, our first research question was “does the mean website visiting time differ between the two designs of pop-ups?” The metric used in this first part was the mean visiting time on the website. The null hypothesis is that there is no difference in mean visiting time between the two pop-ups. The alternative hypothesis is that there is a difference in mean visiting time between the two pop-ups, and the new design of pop-up has a higher mean visiting time. The mathematical terms are expressed below, μ_1 is the mean visiting time using the current pop-up format and μ_2 is the mean visiting time using the new pop-up design format. 
+
+H_0: μ_2-μ_1 ≤ 0 
+
+H_1: μ_2-μ_1 > 0
+
+Our second research question was “does the mean conversion rate of subscription differ between the two designs of pop-ups?” The metric used in the second part was the mean conversion rate of email subscribers. The null hypothesis is that there is no difference of mean conversion rate between the two pop-ups. The alternative hypothesis is that there is a difference of mean conversion rate between the two pop-ups, and the new design of pop-up has a higher mean conversion rate. The mathematical terms are expressed below, p_1 is the mean conversion rate of subscription using the current pop-up format and p_2 is the mean conversion rate of subscription using the new pop-up design format. 
+
+H_0: p_2-p_1 ≤ 0
+
+H_1: p_2-p_1 > 0
+
+
+### Importance of the Study
+
+**Shiyu Hua 100%**: 
+
+“Good design is good business.” Thomas J.Watson, the second president of IBM, told Wharton business students in 1973 (Kucheriavy, 2017). The quote is definitely true, and it is why pursuing this study is beneficial to Forever 21. A powerful user experience design can improve the engagement rate and the conversion rate on the website. And customers, especially the younger generation, have a stronger preference for powerful user experience design. Generation Z, a population born after 1990, have less tolerance towards delayed access to content and list pop-up forms as their top frustration with websites (McKeon, 2020). To attract young population customers, who are the target customers of Forever 21, we should consider the effect of powerful user experience design. Besides, according to a study by Forrester, a good user experience design can also reduce cost of customer acquisition and increase customer retention. What’s more, the research showed that for every dollar invested in the user experience, the return on average is around 100 dollars (Kucheriavy, 2017). Since Forever 21 now focuses on the profitability of the e-commerce platform, we need to understand the effectiveness of our UX design and improve it if necessary. 
+
+### Literature Review
+
+**Shiyu Hua 100%**: 
+
+A “pop-up” is a graphical user interface display area, usually a window, that suddenly appears in the foreground of a visual interface, like a website page (Robert). Pop-ups are forms of online advertising that often contain marketing information and provide a powerful call-to-action to the customers online. However, due to the overuse of pop-up ads techniques, pop-ups are now considered annoying, old-fashioned, and sometimes irritating. According to the research implemented by Bunnyfoot Universality, pop-ups create a terrible user experience for users. Many of them have a negative impression of the brand or website (Chan, Dodd, and Stevens, 2004). Visual designs such as pop-ups and banners sometimes leave customers with a more negative impression of the brand (Hassenzahl, 2018; Karlsson, 2007). Furthermore, some customers think pop-ups waste their time because they have to make at least one or more clicks to close pop-ups that annoy people. The customers’ attitude has changed, they become more goal-oriented and want fewer barriers to content, and thus they feel annoyed with pop-ups (Nazahar, 2019). Especially for Generation Z, they have less tolerance towards delayed access to content, and list pop-up forms as their top frustration with websites, according to a recent survey from Visual Objects (McKeon, 2020). Besides, another study conducted by researchers from School of Business Studies, Southeast University also found that goal impediment and negative experiences are positively related to advertising avoidance online from the attitude of Generation Z customers, and suggested the companies to find a balance between online ads amount and online promotional tactics (Hossain, 2018). Despite the negative influences and side effects, this type of advertising is still in widespread use. According to a research conducted by Raoul Bell and Axel Bunchner examining the positive effects of disruptive advertising consumer preferences, the findings demonstrated that disruptive advertising can be effective in increasing brand preference (Bell & Buchner, 2018). According to Jenny Bittner and Robin Zondervan from the study on motivating and achievement-eliciting pop-ups in online environments, "short pop-ups evoked an association of the website with motivational contents" and pop-ups may activate achievement motivation and a positive user experience (Bittner & Zondervan, 2015). 
+
+There were also some research studies working on the effectiveness of intrusive pop-ups and its alternative formats such as in-inline ads and polite pop-ups. Four researchers did a study on the effects of online advertising: a focus on pop-up and in-line ads, and found out that retention of website information and ad content was higher for inline ads that were less intrusive than pop-up ads, and users prefer not to be interrupted, "diverting their attention towards cloning the pop-up window" (Mccoy et al., 2004). What's more, the experimental study of pop-up design characteristics and user experience on polite pop-up concluded that polite pop-ups can be used as a substitute for traditional intrusive pop-ups. The polite pop-up is defined as a pop-up window that "eliminates the intrusive and surprising element of the pop-ups"(Willermark & Sigríður Íslind, 2020). The results showed that polite pop-ups can catch users attention without adding negative sentiments, and users willingly interacted with polite pop-ups for a relatively long time (Willermark & Sigríður Íslind, 2020). 
+
+### Research Plan
+
+**Shiyu Hua 100%**: 
+
+The study works with Forever 21 U.S. official website. The population of interest includes all website visits to this website. The experiment lasted a month from March 1st 2022 to March 31th 2022, avoiding the holiday season. We randomly assigned each visit to a control group and a treatment group. The control group interacted with a full-screen intrusive pop-up, and the treatment group interacted with a new non-intrusive slide-in box pop-up on the right sidebar. Then we randomly selected 2985 samples from each group and reached a sample size of 5970 from power analysis. We collected all relative data from the Forever 21 back-end data, including the type of pop-up format interacted with, the total website visiting time,and the status of subscription. The independent variables for the study were the two unique design format of the pop-ups. The dependent variables were the website visiting time and the conversion rate of subscription. The study used RStudio Software for statistical analysis. 
+
+
+#### Population of Interest
+
+**Jiamin Xu 100%**:
+
+We included all website visits of U.S. Forever 21 official websites between March 1st 2022 and March 31th 2022. We excluded website visits of non-U.S. Forever 21 official websites, because we want to save costs and to prevent the possible decrease of sales revenue due to our experiment. 
+
+#### Sample Selection
+
+**Jiamin Xu 100%**:
+
+We randomly and evenly assigned all U.S. visits of Forever 21 official websites during March into the control group and the treatment group. Because every visit records is equally likely to be selected from the population, the sample of our study can reasonably representative of the population. We provided two different design formats of pop-ups to two groups by a computer algorithm. We displayed a full-screen intrusive pop-up which is the current pop-up used by Forever 21 to the control group. We displayed a new non-intrusive slide-in box pop-up on the right side of the website to the treatment group. The sample consisted of 5970 visit records. We randomly selected 2985 samples from visits which have displayed the current design of the pop-up, and then randomly selected 2985 samples from visits which have displayed a new non-intrusive slide-in box pop-up. 
+
+
+#### Sample Size
+
+**Guoming Shan 100%**: 
+
+The outcome variable of the first research question is the website visiting time. Since the current visit time of Forever 21 is about 370 seconds per visit, the team assumes that the website visit time of the control group follows a normal distribution with a mean of 370 and a standard deviation of 60. (Similarweb,2021) In this context, we assume that a 30 seconds increase in visiting time could bring about meaningful promotion in the final purchase behavior. Thus, the website visit time of the treatment group follows a normal distribution with a mean of 400 and a standard deviation of 60. Hence, the difference of the mean average visited time between the two groups is 30 seconds(the average visited times expected effect increases from 370 seconds to 400 seconds), and the common standard deviation of the two groups is 60 seconds. Therefore the effective size of this model is 0.5. In the power analysis, the power was set to 0.8. Based on the result, the samples size calculated is 50.1508, which can be rounded up to 51. The team should test it at least 51 times to have an 80% chance of correctly rejecting the null hypothesis at the 0.05 significance level.
+ 
+The outcome variable of the second research question is the conversion rate of the subscription. This is a binary variable with two levels, either subscribed or not subscribed. Under internet-wide e-commerce, the average conversion rate is about 2% and the majority range from 1% to 5%. (Forest,2018) Therefore, the team assumes that the conversion rate of subscription of the control group follows a binomial distribution with a mean of 2%. Considering a 1% increase in conversion rate could be significant, we assume the average conversion rate of subscription of the treatment group follows a binomial distribution with a mean of 3%.  With the same power of 0.8, the samples size calculated by the power analysis is 2984.045, which can be rounded up to 2985. If the average conversion rate's expected effect increases from 2% to 3% and the average expected conversion rate is 3%, the team needs to test it at least 2985 times to have an 80% chance of correctly rejecting the null hypothesis 0.05 significance level.  
+ 
+To sum up, the team will set the sample size at 2985 for each group to ensure the experiment's accuracy and decrease the uncertainty in the experiment. 
+
+```{r power_analysis}
+library(pwr)
+pwr.t.test(d=(400-370)/60,sig.level = 0.05,power = 0.8,type = 'two.sample',alternative = 'greater')$n
+pwr.2p.test(h=ES.h(0.03,0.02),sig.level = 0.05,power = 0.8,alternative = 'greater')$n
+```
+
+
+#### Operational Procedures
+
+**Guoming Shan 100%**:
+
+Forever 21 will focus on the U.S visitor who visits forever 21 official websites during March, who can utilize the desktop or other electronic devices that can browse the webpage and are interested in browsing Forever 21 as the participants. In this experiment, no training and no practice are needed. When customers browse the website, their location and visited time will be legally recorded and automatically stored in the Forever 21 database. Also, according to the calculation of the Forever 21 database, the team will get the record of the conversion rate of the customers in one month. The post-test will verify users' information, such as location and browsing time. The equipment required will be Hardware: Desktop, projector, screen, or other electronic devices that can browse the web page. Software:  Google Chrome or other browsers can access the Forever 21 web page and verify the customers' location, visit time, and conversion rate.
+![](./Procedure.png)
+
+### Brief Schedule
+
+**Guoming Shan 100%**:
+
+In this study, the team will spend a month doing different tasks to achieve the outcome of this research. This month will be divided into four equal periods, and some of the work can be done simultaneously. Some of the work, such as producing the experiment cost estimation, writing a report, and having a final result, is time-consuming and needs to be finished step by step. Therefore, team adjustments can be made according to the brief schedule below.
+
+![](./Schedule.png)
+
+
+#### Data Collection
+
+**Rou Gang 50%, Can Luo 50%**: 
+
+In order to answer two research questions by analyzing the data, we choose the observation data collection method to gather data. We use the backend data from Forever 21. This method of data collection brings us many benefits. It is a cheaper way to obtain data. Compared with a questionnaire, data accuracy is higher because the data are objective rather than subjective. Our research has three variables: pop-up format, website visiting time, and subscription. Pop-up format and subscription are categorical variables and website visiting time is a numerical variable. There are two design formats of pop-ups. Pop-up format refers to which design, full-screen intrusive pop-up or non-intrusive slide-in box pop-up, was used in an access record. Website visiting time is the length of time a user spends on the Forever 21 website in seconds. The value of the subscription is true or false which means whether the visitor subscribes for Forever 21 through a pop-up.
+
+
+#### Data Security
+
+**Rou Gang 50%, Can Luo 50%**: 
+
+To ensure the security of user information, we need to take three steps. First, We use AAA(authentication, authorization, and accounting) to guarantee only authorized researchers can access the data, control what they are permitted to operate, and keep a record of each visitor's access. Second, we encrypt the data using a cryptographic algorithm and a key. Third, we use firewalls to prevent illegal approaches, ransomware, and viruses. (Stevovic, 2019)
+
+#### Outcomes (Dependent Variables)
+
+**Shiyu Hua 100%**: 
+
+Based on the research questions, we have two parts of study. For the first part of the study, we measure the website visiting time for each visit. The website visiting time is defined as the total time spent on the website for one visit, from entering the page to closing the site in seconds. The mean visiting time is measured as the outcome for analysis. For the second part of the study, we measure the conversion rate of subscriptions. The conversion rate is defined as the percentage of users who fill out the subscription form out of all users visiting the website. The mean conversion rate of subscription is measured as the second outcome for analysis. 
+
+#### Treatments (Independent Variables)
+
+**Shiyu Hua 100%**: 
+
+The independent variable of the study is the two different design formats of pop-ups. The current design of pop-up in use is the full-screen intrusive pop-up upon the entrance of the website. The new design we would like to examine is a non-intrusive slide-in box pop-up put on the right sidebar of the website. This new treatment pop-up format does not obscure the view of the website and distract users from their primary task on the website. It is visible in the right sidebar as users scrolling along and visiting pages on the website, but does not jump to distract the user at all. The only difference between the two pop-ups is the design format, else are all controlled to be the same. 
+
+![The illstration of current pop-up in use](./Current Pop-ups.png)
+
+![The illustration of the new pop-up](./New Pop-ups.png)
+
+#### Other Variables
+
+**Shiyu Hua 100%**: 
+
+There are no other variables recorded in the study, but we controlled the other aspects of independent variables. The context of the pop-ups are the same special offer to subscribers by filling out the form. The timing of the pop-ups is also controlled. The pop-ups are shown after 5 seconds of entering the website. 
+
+
+
+### Statistical Analysis Plan  
+
+**Guoming Shan 100%**: 
+
+There will be two tests of two outcome variables based on the research questions. For the first research questions, the team will utilize the one-sided t-test to determine whether there are differences between treatment and control groups of visited-time in a particular direction. This test will assume that the dependent variable - visiting time obeys normal distribution. The results will be divided into two directions. The first direction is "the polite pop-up will not affect visited-time," and the treatment group will have the same visiting time as the control group has; The other direction is "the polite pop-up will have an impact on visiting time" which will cause the improvement of the treatment group.
+  
+Additionally, for the second research question, the team will focus on the one-side test of proportions to compare the proportion of conversion rate in the treatment group with the proportion of conversion rate in the control group. Using the one-side test of proportions is significant to the experiment because the entire populations are enormous, and the team will use the power analysis to decide the sample size for these two tests. The result will have two directions. The first direction is "the polite pop-up will not affect the conversion rate," and the treatment group will have the same value of conversion rate as the control group. The other direction is "the polite pop-up will impact the conversion rate," and the treatment group will have a higher conversion rate than the treatment group.
+
+
+### Limitations and Uncertainties
+
+**Guoming Shan 100%**: 
+
+Firstly, limitations of this study might be the duration of the experiments, which might not fully interpret the result with only one-month data. Also, the population is based on the visitors who visited the U.S. Forever 21 website; sometimes, the team cannot make sure who registered and who did not register if some users did not turn on the auto-saving information function on Chrome. Furthermore, some users might register, but they do not want to log in to save time. 
+
+Secondly, the U.S Forever 21 website cannot trace users' age, which might affect the team's research. The website cannot recognize the age of users, which means that the data can not be divided into different age groups and might not give detailed research data on age. 
+Thirdly, although the different types of Pop-up might have a significant impact on visited-time and conversion rate, the team might not be able to make sure whether the coupon or other promotion strategies have effects on the conversion rate; and the team cannot make sure the design of the user interface has some impacts on the visited-time.
+Fourth, an IP address can be recorded repeatedly on different days(IP address will not be recorded repeated on the same day), which might affect the result of the experiment and simulation.
+
+However, all of these things written above can be well avoided when the team explains them. In these experiments, the team wants to determine the relationship between the pop-up and the visited-time and conversion rate. Hence, all other unrelated conditions will remain the same. In addition, this experiment will use the control group, which the variable is a different type of pop-ups, and the result they cause will be the outcome variables- visited-time and conversion rate. Within a month, the participants and team felt the variation and outcome caused by different pop-ups most intuitively. Also, the user interface needs to take a long time to design and get feedback from the participant, which is time-consuming and will cost money. The team defined the population as the visiting number but not the IP address or the visitors. 
+
+
+## Part 2:  Simulated Studies
+
+**Rou Gang 50%, Can Luo 50%**: 
+
+In this research, we created two scenarios for each research question. Under the scenario with no effect, the treatment of a new pop-up format has no impact on the website visiting time or the conversion rate of subscription. Under the scenario with expected effect, this treatment does significantly increase the visiting time and conversion rate of subscription.Before the simulation, we need to determine the distribution of the population and the distribution of the effect and the parameters.
+
+
+### Research Question 1:
+
+The outcome variable of the first research question is the website visiting time. For the control group, the website visit time follows a normal distribution with a mean of 370 and a standard deviation of 60. For the treatment group, it follows a normal distribution with a mean of 400 and a standard deviation of 60. According to the power analysis conducted before, the sample size is 2985 for each group. Since the sample is large enough, the two sample mean and the difference are approximately normally distributed. Based on the population distribution, the distribution of two sample means and the effect can be described as the following mathematical expressions.
+
+Website visting time of the population:
+
+Control Group: N(370, 60^2)
+
+Treatment Group: N(370, 60^2)
+
+Sample Mean:
+
+Control Group : N(370, 1.21)
+
+Treatment Group : N(400, 1.21)
+
+Effect : N(30, 2.41)
+
+For the first research question, we use a two-sample t-test to explore whether there is an increase in the average website visiting time due to the treatment. In our analysis, the confidence level has been set to 95%. Therefore, we need to compare the p-value with 0.05. If the p-value is smaller than 0.05, we should reject the null hypothesis and accept the alternative hypothesis. The null hypothesis is that if the company changes the full-screen intrusive pop-up to a non-intrusive slide-in box pop-up, the average website visiting time tends to decrease or keep the same as the original visiting time. Because we reject the null hypothesis, the average visiting time tends to increase when improving the pop-up design. In contrast, if the p-value is greater than 0.05, we can not deny the null hypothesis. We do not have enough evidence to demonstrate changing the pop-up format can help increase the average website visiting time. 
+
+
+
+#### Scenario 1:  No Effect
+
+**Rou Gang 50%, Can Luo 50%**: 
+
+##### Simulation
+
+After deciding the distribution of the dependent variables, we can then simulate the data set for the no effect scenarios. There are three columns in each data set: Group, visit_time, and subscribed. The Group column is a categorical variable, a random sample of either Control and Treatment. The visit_time column is a numeric variable following a normal distribution. And the subscribed column is a logical variable following a binomial distribution. To see the random variation of the simulation, we repeated the simulation and generated 1000 separate experiments, each with an overall sample size of 5970. For that purpose, we also added a column named Experiment to mark each simulation, so that we can collect the test results of each simulation.
+
+```{r q1_scenario1_simulation}
+library(data.table)
+library(caret)
+
+B <- 1000
+n <- 5970
+RNGversion(vstr = 3.6)
+set.seed(0917)
+
+# Create the simulated data of no effect scenario
+Experiment <- 1:B
+Group <- c(rep.int(x = "Treatment", times = n/2),rep.int(x = "Control", times = n/2))
+no_effect <- as.data.table(expand.grid(Experiment = Experiment, Group = Group))
+setorderv( x = no_effect, cols = c('Experiment', 'Group'), order = c(1,1))
+no_effect <- no_effect[Group == "Control", visit_time := round(x = rnorm(n = .N, mean = 370, sd = 60),digits = 1)]
+no_effect <- no_effect[Group == "Treatment", visit_time := round(x = rnorm(n = .N, mean = 370, sd = 60),digits = 1)]
+no_effect <- no_effect[Group == "Control", subscribed := rbinom(n = .N, size = 1, prob = 0.02)]
+no_effect <- no_effect[Group == "Treatment", subscribed := rbinom(n = .N, size = 1, prob = 0.02)]
+```
+
+##### Analysis
+
+```{r q1_scenario1_analysis}
+
+# Create a function for two-sample one-sided ttest
+ttest.experiment <- function(the.dat){
+  require(data.table)
+  setDT(the.dat)
+  
+the.test <- t.test(x = the.dat[Group == 'Treatment' , visit_time], 
+       y = the.dat[Group == 'Control', visit_time],
+       alternative = 'greater', conf.level = 0.95, var.equal = T)
+  
+  the.effect <- the.test$estimate[1] - the.test$estimate[2]
+  lower.bound <- the.test$conf.int[1]
+  upper.bound <- the.test$conf.int[2]
+  p <- the.test$p.value
+  
+  result <- data.table(effect = the.effect, lower_ci = lower.bound, upper_ci = upper.bound, p = p)
+  
+  return(result)
+}
+
+# Perform the test
+ttest.results.no.effect <- no_effect[, ttest.experiment(the.dat = .SD), keyby = "Experiment"]
+
+# Display the result
+data.table(mean_pval = mean(ttest.results.no.effect$p),
+           effect = mean(ttest.results.no.effect$effect),
+           lower_bound = mean(ttest.results.no.effect$lower_ci),
+           upper_bound = mean(ttest.results.no.effect$upper_ci),
+           false_positive = ttest.results.no.effect[,mean(p<0.05)],
+           true_negative = ttest.results.no.effect[,mean(p>=0.05)]
+           )
+```
+
+
+
+#### Scenario 2:  An Expected Effect
+
+**Rou Gang 50%, Can Luo 50%**: 
+
+##### Simulation
+
+```{r q1_scenario2_simulation}
+
+# Create the simulated data of expected effect scenario
+Group <- c(rep.int(x = "Treatment", times = n/2),rep.int(x = "Control", times = n/2))
+exp_effect <- as.data.table(expand.grid(Experiment = Experiment, Group = Group))
+setorderv( x = exp_effect, cols = c('Experiment', 'Group'), order = c(1,1))
+
+exp_effect <- exp_effect[Group == "Control", visit_time := round(x = rnorm(n = .N, mean = 370, sd = 60),digits = 1)]
+exp_effect <- exp_effect[Group == "Treatment", visit_time := round(x = rnorm(n = .N, mean = 400, sd = 60),digits = 1)]
+exp_effect <- exp_effect[Group == "Control", subscribed := rbinom(n = .N, size = 1, prob = 0.02)]
+exp_effect <- exp_effect[Group == "Treatment", subscribed := rbinom(n = .N, size = 1, prob = 0.03)]
+```
+
+##### Analysis
+
+```{r q1_scenario2_analysis}
+
+# Perform the test
+ttest.results.exp.effect <- exp_effect[, ttest.experiment(the.dat = .SD), keyby = "Experiment"]
+
+# Display the result
+data.table(mean_pval = mean(ttest.results.exp.effect$p),
+           effect = mean(ttest.results.exp.effect$effect),
+           lower_bound = mean(ttest.results.exp.effect$lower_ci),
+           upper_bound = mean(ttest.results.exp.effect$upper_ci),
+           false_negative = ttest.results.exp.effect[,mean(p>=0.05)],
+           true_positive = ttest.results.exp.effect[,mean(p<0.05)]
+           )
+```
+
+For the first research question, will the pop-up increase the fixation time on the shopping cart page? We use a two-sample t-test to know whether there is an increase in the average website visiting time. In our analysis, the confidence level has been set to 95%. Therefore, we need to compare the p-value with 0.05. If the p-value is smaller than 0.05, we should reject the null hypothesis and accept the alternative hypothesis. The null hypothesis is that if the company changes the full-screen intrusive pop-up to a non-intrusive slide-in box pop-up, the average website visiting time tends to decrease or keep the same as the original visiting time. Because we reject the null hypothesis, the average visiting time tends to increase when improving the pop-up design. In contrast, if the p-value is greater than 0.05, we can not deny the null hypothesis. We do not have enough evidence to demonstrate changing the pop-up format can help increase the average website visiting time.
+
+
+### Research Question 2:
+
+The outcome variable of the second research question is the conversion rate of the subscription. This is a binary variable with two levels, either subscribed or not subscribed. For the control group, we assume the average conversion rate of subscription follows a binomial distribution with a mean of 2%. For the treatment group, we assume it follows a binomial distribution with a mean of 3%. Since both the samples are large samples, the distribution of the two sample proportions and the difference between them can be approximated as a normal distribution. According to the population distribution, the distribution of two sample proportions and the effect can be described as the following mathematical expressions.
+
+Subscription conversion rate of the population:
+
+Control Group: B(1, 0.02)
+
+Treatment Group: B(1, 0.03)
+
+Sample Mean:
+
+Control Group : N(0.02, 6.57E-06)
+
+Treatment Group : N(0.03, 9.57E-06)
+
+Effect : N(0.01, 1.614E-05)
+
+
+To answer the second research question concerning conversion rate, we use the test of proportions to compare the conversion rate with different pop-up designs. If the p-value is greater than 0.05, we can not reject the null hypothesis. So we do not have enough evidence to prove that the conversion rate will improve if we change the pop-up format. If the p-value is smaller than 0.05, we reject the null hypothesis. The null hypothesis is that the ratio of subscriptions with a full-screen intrusive pop-up is greater or equal to the conversion rate with a new pop-up design. So we can conclude that the conversion rate of subscriptions with an original pop-up is minor compared to the new format pop-up.
+
+
+
+#### Scenario 1:  No Effect
+
+**Rou Gang 50%, Can Luo 50%**: 
+
+##### Simulation
+
+In this part, we used the data of no effect scenario we've simulated in the research question one. 
+```{r q2_scenario1_simulation}
+
+```
+
+##### Analysis
+
+```{r q2_scenario1_analysis}
+
+# Create a function for two-sample one-sided test of proportions
+proptest.experiment <- function(the.dat, x1, x2){
+  require(data.table)
+  setDT(the.dat)
+
+the.test <- prop.test(x = c(x1, x2), n = c(n/2, n/2), alternative = "greater")
+  
+  the.effect <- the.test$estimate[1] - the.test$estimate[2]
+  lower.bound <- the.test$conf.int[1]
+  upper.bound <- the.test$conf.int[2]
+  p <- the.test$p.value
+  
+  result <- data.table(effect = the.effect, lower_ci = lower.bound, upper_ci = upper.bound, p = p)
+  
+  return(result)
+}
+
+# Perform the test
+proptest.results.no.effect <- no_effect[, proptest.experiment(the.dat = .SD, x1 =nrow(.SD[Group=="Treatment"&subscribed==1,]) , x2 = nrow(.SD[Group=="Control"&subscribed==1,])), keyby = "Experiment"]
+
+# Display the result
+data.table(mean_pval = mean(proptest.results.no.effect$p),
+           effect = mean(proptest.results.no.effect$effect),
+           lower_bound = mean(proptest.results.no.effect$lower_ci),
+           upper_bound = mean(proptest.results.no.effect$upper_ci),
+           false_positive = proptest.results.no.effect[,mean(p<0.05)],
+           true_negative = proptest.results.no.effect[,mean(p>=0.05)]
+           )
+```
+
+
+
+#### Scenario 2:  An Expected Effect
+
+**Rou Gang 50%, Can Luo 50%**: 
+
+##### Simulation
+
+In this part, we used the data of expected effect scenario we've simulated in the research question one.
+```{r q2_scenario2_simulation}
+
+```
+
+##### Analysis
+
+```{r q2_scenario2_analysis}
+
+# Perform the test
+proptest.results.exp.effect <- exp_effect[, proptest.experiment(the.dat = .SD, x1 =nrow(.SD[Group=="Treatment"&subscribed==1,]), x2 =  nrow(.SD[Group=="Control"&subscribed==1,])), keyby = "Experiment"]
+
+# Display the result
+data.table(mean_pval = mean(proptest.results.exp.effect$p),
+           effect = mean(proptest.results.exp.effect$effect),
+           lower_bound = mean(proptest.results.exp.effect$lower_ci),
+           upper_bound = mean(proptest.results.exp.effect$upper_ci),
+           false_negative = proptest.results.exp.effect[,mean(p>=0.05)],
+           true_positive = proptest.results.exp.effect[,mean(p<0.05)]
+           )
+```
+
+In conclusion, the recommendation for Forever 21 is different based on two situations. In the no effect scenario, we do not have enough evidence to prove that the new pop-up design could increase the visiting time and conversion rate in the no-effect scenario. Changing the pop-up form can cause additional expenses, such as pop-up design expenses, administrative expenses etc. Therefore, if the company does not have the extra money to change the pop-up form, it is better to keep the original pop-up and find other ways to encourage visitors to subscribe. In general, I do not recommend Forever 21 change its pop-up format.
+
+In the effect scenario, however, the conversion rate of subscriptions and website visiting time can increase with the new format pop-up. Because the new design could reduce visitors' resistance to pop-ups, customers are less likely to have a negative impression of Forever 21. On the one hand, the new pop-ups indirectly help customers increase their browsing time by reducing their aversion. In this way, the consumers are more likely to buy more items. On the other hand, since visitors are less resistant to pop-ups, they are more likely to read the content then subscribe instead of closing pop-ups. So the conversion rate will increase. If Forever 21 could send emails to consumers, the probability that consumers would come back to buy the product will increase. In general, the new pop-ups will help Forever 21 regain user engagement in the online environment and also increase online sales. Therefore, we suggest the company use the non-intrusive slide-in box design pop-ups instead of the full-screen intrusive pop-ups.   
+
+
+The results of 1000 experiments are summarized as follows:
+
+![](./Analysis Results.png)
+
+We filled the table based on 1000 times data simulation, and thus we could use the mean p-value instead of the p-value for a single test. In the no effect scenario, the mean p-value for research question one is 0.5045, for research question two is 0.4905. Therefore, we do not have enough evidence to prove that the new pop-up can help improve the conversion rate and increase the website visiting time. In the effect scenario, the mean p-value for research question one is 2.4315e-59, for research question two is 0.0462. So based on this result, we can conclude that the new pop-up can increase the website visiting time and the conversion rate. The mean effect in simulated data shows the difference in the average dependent variable. When we manufacture the data in the no-effect scenario, the differences in average visiting time and average conversion rate are insignificant. However, the differences become substantial in the effect Scenario. The mean effect in simulated data of visiting time is about 30 seconds, and of conversion rate is 1%. Moreover, we also used four percentages to evaluate the experiment.
+
+For the no-effect scenario, we calculate the percentage of false positives and true negatives. The rate of false positives is Type I error which shows the ratio when the null hypothesis has been rejected. The percentage of false negatives is the ratio that fails to reject the null hypothesis, so the outcome is correct. Through calculation, type I error is 4% for research question one and is 4.7% for research question two. The portion error is small, so our experiments are well designed.
+
+For the effect scenario, we use the percentage of false negatives and the percentage of true positives. The first one indicates the portion when we fail to reject the false null hypothesis, and the second one shows the ratio that we can reject the false null hypothesis. The percentage of true positives shows the proportion of correct outcomes, and the percentage of false negatives is Type II error. Through calculation, type II error is 0% for research question one and is 22.4% for research question two. On the other hand, the percentage of true positives is 100% and 77.6%. It means that the likelihood we can detect the effect on website visiting time is 100%. Furthermore, there is a nearly 80% chance we can demonstrate the new pop-up format could increase the subscription conversion rate. Since we set the power to 0.8 in the power analysis, this result shows that the experiment is roughly in line with our expectations.
+
+
+## References
+
+** Shiyu Hua 20%, Jiamin Xu 20%, Can Luo 20%, Rou Gang 20%, Guoming Shan 20%**:
+
+Bell, R., &amp; Buchner, A. (2018). Positive effects of disruptive advertising on consumer preferences. Journal of Interactive Marketing, 41, 1–13. https://doi.org/10.1016/j.intmar.2017.09.002 
+
+Bhattarai, A., &amp; Telford, T. (2019, September 30). Forever 21 files for bankruptcy, will close 350 stores worldwide amid restructuring. The Washington Post. Retrieved December 7, 2021, from https://www.washingtonpost.com/business/2019/09/30/forever-files-bankruptcy-will-close-stores-worldwide-amid-restructuring/. 
+
+Bittner, J. V., &amp; Zondervan, R. (2015). Motivating and achievement-eliciting pop-ups in online environments: A user experience perspective. Computers in Human Behavior, 50, 449–455. https://doi.org/10.1016/j.chb.2015.04.015 
+
+Chan, A., Dodd, J., and Stevens, R. (2004) The efficacy of pop-ups and the resulting effect on brands, White Paper by Bunnyfoot Universality. http://www.bunnyfoot.com/bunnyfoot_popup.pdf.
+
+Forest Conner Posted on October 5, About The Author Forest Conner, Author, A. T., & Conner, F. (2018, December 18). What conversion rate can you expect for a subscription network? Vimeo Blog. Retrieved December 5, 2021, from https://vimeo.com/blog/post/what-conversion-rate-can-you-expect-for-a-subscription-network/. 
+
+Hassenzahl, M. (2018). The thing and I: Understanding the relationship between user and product. Human–Computer Interaction Series, 301–313. https://doi.org/10.1007/978-3-319-68213-6_19
+
+Hossain, M. (2018). Understanding the Attitude of Generation Z Consumers Towards Advertising Avoidance on the Internet. European Journal of Business and Management, 10(36). 
+
+Kahn, B., &amp; Cesareo, L. (2019, October 10). Fashion fail: Where did forever 21 go wrong? Knowledge@Wharton. Retrieved December 7, 2021, from https://knowledge.wharton.upenn.edu/article/where-did-forever-21-go-wrong/.
+
+Kang, J. (2021, October 19). Instacart expects more growth in grocery delivery. The Wall Street Journal. Retrieved October 20, 2021, from https://www.wsj.com/articles/instacart-expects-more-growth-in-grocery-delivery-11634666233. 
+
+Kucheriavy, A. (2017, October 11). Council post: Good UX is good business: How to reap its benefits. Forbes. Retrieved December 7, 2021, from https://www.forbes.com/sites/forbestechcouncil/2015/11/19/good-ux-is-good-business-how-to-reap-its-benefits/?sh=2fb98cb4e51d. 
+
+Lim, S. (2020, January 7). Forever 21 turns to e-commerce after retail failures. The Drum. Retrieved December 7, 2021, from https://www.thedrum.com/news/2020/01/07/forever-21-turns-e-commerce-after-retail-failures. 
+
+Mccoy, S., Everard, A., Galletta, D., &amp; Polak, P. (2004). A Study of the Effects of Online Advertising: A Focus on Pop-Up and In-Line Ads . HCI Research. 
+
+McKeon, K. (2020, May 14). 3 website UX qualities generation Z wants. Small Business Bonfire. Retrieved December 7, 2021, from https://www.smallbusinessbonfire.com/ux-gen-z/.
+
+Nazahar, M. I. (2019). The Impact on Using Pop-Up Ads of Brands to Behavioral Intention, Customer Retention, and Intrusiveness. http://etd.repository.ugm.ac.id/penelitian/detail/171290
+
+Robert, D. (n.d.). Marketing Management for Ugc Net Jrf Commerce. Innovative Institute. 
+
+Similarweb, Oct 2021 top fashion and apparel website ranking. Similarweb. (n.d.). Retrieved December 5, 2021, from https://www.similarweb.com/zh/top-websites/category/lifestyle/fashion-and-apparel/. 
+
+Stevovic, J. (2019, October 9). Data Protection vs. data security. The Chino.io Blog. Retrieved December 5, 2021, from https://www.chino.io/blog/data-protection-vs-data-security/. 
+
+Willermark, S., &amp; Sigríður Íslind, A. (2020). The polite pop-up: An experimental study of pop-up design characteristics and User Experience. Proceedings of the 53rd Hawaii International Conference on System Sciences. https://doi.org/10.24251/hicss.2020.514
+
+
+
+
+
